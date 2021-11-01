@@ -1,0 +1,25 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# 30DayMapChallenge
+
+A collection of maps for the #30DayMapChallenge
+
+## 2021 Images
+
+```{r}
+images <- list.files(here::here("2021/images"), full.names = T)
+images
+knitr::include_graphics(images)
+```
+
